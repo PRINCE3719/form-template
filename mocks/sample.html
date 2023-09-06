@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sample.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="sample.js"></script>
+    <div class="container">
+        <div class="sidebar">
+            <img id="logo" src="logo (1).svg">
+            <ul id="uli">
+                <li><i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Dashboard</span></li>
+                <li><i class="fa-regular fa-file-lines"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Orders</span></li>
+                <li><i class="fa-solid fa-bag-shopping"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Products</span></li>
+                <li><i class="fa-regular fa-circle-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Customers</span></li>
+                <li><i class="fa-regular fa-comment-dots"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Messages</span></li>
+                <li><i class="fa-solid fa-gear"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Settings</span></li>
+            </ul>
+        </div>
+        <div class="header">
+            <div class="head1">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"
+                        style="margin-left: 13px;"></i><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search for...</span>
+                </div>
+            </div>
+            <div class="head2">
+                <div class="bell">
+                    <i class="fa-regular fa-bell" style="margin-left: 6px;"></i><span>.</span>
+                </div>
+                <div class="photo">
+                    <img id="person" src="user3.jpg">
+                    <div class="pname">
+                        <h4>Ismail Hossain</h4>
+                        <h6>Seller Account</h6>
+                    </div>
+                    <div class="dropit">
+                        <button id="drop-butn" onclick="drop()" onblur="dropof()">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </button>
+                        <ul id="myDropdown">
+                            <li>Change user</li>
+                            <li>Settings</li>
+                            <li>Log out</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-head1">
+                <span style="width: 50%;">
+                    <h3>Edit Profile</h3>
+                </span>
+                <span style="width: 50%;">
+                    <h3>Change Password</h3>
+                </span>
+            </div>
+            <div class="inmain">
+                <div class="insidem">
+
+                    <div class="form-left">
+                        <label>Your Name</label>
+                        <input type="text" id="input1" value="Ismail Hossain">
+                        <label>Store Name</label>
+                        <input type="text" id="input1" value="Maxima Studio">
+                        <label>Location</label>
+                        <select id="name1">
+                            <option>United States</option>
+                        </select>
+                        <label>Currency</label>
+                        <select id="name1">
+                            <option>US Dollar ($)</option>
+                        </select>
+                        <label>Email</label>
+                        <input type="text" id="input1" value="Amijanina@gmail.com">
+                        <label>Phone</label>
+                        <input type="text" id="input1" value="01978536547">
+                        <label>Address</label>
+                        <input type="text" id="input1" value="813 Howard Street,Oswego NY,13126,USA">
+                    </div>
+                </div>
+                <div class="leftin">
+
+                    <div class="form-right">
+                        <label>Current Password</label>
+                        <input type="password" id="input1" value="prince2003">
+                        <label>New Password</label>
+                        <input type="password" id="input1" value="prince2000">
+                        <label>Confirm Password</label>
+                        <input type="password" id="input1" value="prince2000">
+                    </div>
+                    <div>
+                        <div class="main-head3">
+                            <h3>Notifications</h3>
+                        </div>
+                        <div class="form-right1">
+                            <div class="in-form-right1">
+                                <div class="div1">
+                                    <div class="div1-5">
+                                        <h5>Order Confirmation</h5>
+                                        <h6>You will be notified when customer order any product</h6>
+                                    </div>
+                                    <div class="div2">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="div1">
+                                    <div class="div1-5">
+                                        <h5>Order Status Changed</h5>
+                                        <h6>You will be notified when customer make changes to the order</h6>
+                                    </div>
+                                    <div class="div2">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="div1">
+                                    <div class="div1-5">
+                                        <h5>Order Deivered</h5>
+                                        <h6>You will be notified once the order is delivered</h6>
+                                    </div>
+                                    <div class="div2">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="div1">
+                                    <div class="div1-5">
+                                        <h5>Email Notification</h5>
+                                        <h6>Turn on email notification to get updates through email</h6>
+                                    </div>
+                                    <div class="div2">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-bottom">
+                <button type="submit" class="save-button">Save</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
